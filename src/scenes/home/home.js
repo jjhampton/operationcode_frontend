@@ -34,6 +34,7 @@ import SignupInformation from './informationForm/informationForm';
 import Benefit from './benefit/benefit';
 import Terms from './termsOfService/termsOfService';
 import ChapterLeader from './chapterLeader/chapterLeader';
+import Vettec from './vettec/vettec';
 import styles from './home.css';
 
 const ReactToastr = require('react-toastr');
@@ -203,6 +204,7 @@ class Home extends Component {
             <Route exact path="/scholarships" component={Scholarships} />
             <Route path="/benefit" render={() => <Benefit {...authProps} />} />
             <Route path="/gala" render={() => <Benefit {...authProps} />} />
+            <Route path="/vettec" render={() => <Vettec />} />
 
             {/* eslint-disable */}
             <Route
