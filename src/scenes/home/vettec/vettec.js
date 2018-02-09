@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import QuoteBanner from 'shared/components/quoteBanner/quoteBanner';
 
-class Vettec extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  render() {
-    return <div>VET TEC content here</div>;
-  }
-}
+const Vettec = () => (
+  <div>
+    <QuoteBanner
+      author="Kevin McCarthy"
+      quote="Our veterans have the character and drive to do any job. We must support them to learn skills for the jobs of the future."
+    />
+  </div>
+);
 
 export default Vettec;

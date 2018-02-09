@@ -9,6 +9,7 @@ import AuthenticatedRoute from 'shared/components/authenticatedRoute/authenticat
 import familyImage from 'images/Family-2.jpg';
 import lincolnImage from 'images/lincoln.jpg';
 import colinPowellImage from 'images/colin-powell.jpg';
+import deployingImage from 'images/deploying.jpg';
 import Profile from './profile/profile';
 import SignUp from './signup/signup';
 import Scholarships from './scholarship/scholarships';
@@ -79,6 +80,13 @@ class Home extends Component {
         bgChanged: !this.state.bgImage,
         bgImage: true,
         bgImageUrl: colinPowellImage,
+        bgImageStyle: 'backgroundImageTeam',
+      });
+    } else if (location.pathname === '/vettec') {
+      this.setState({
+        bgChanged: !this.state.bgImage,
+        bgImage: true,
+        bgImageUrl: deployingImage,
         bgImageStyle: 'backgroundImageTeam',
       });
     } else {
